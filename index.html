@@ -10,6 +10,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js"
@@ -18,7 +23,10 @@
   </head>
   <body>
     <section class="font-be-vietnam bg-dark-1 h-auto">
-      <nav class="px-4 mx-auto max-w-screen-2xl lg:px-24 lg:pt-7 pt-5">
+      <nav
+        id="header"
+        class="px-4 mx-auto max-w-screen-2xl lg:px-24 lg:pt-7 pt-5"
+      >
         <div
           class="flex flex-col w-full lg:flex-row lg:items-center gap-5 divide-gray-700 lg:divide-x"
         >
@@ -139,7 +147,7 @@
         // Navbar toggling animation            $(document).ready(function () {                $(".mobile-menu-button").each(function (_, navToggler) {                    var target = $(navToggler).data("target");                    $(navToggler).on("click", function () {                        $(target).animate({                            height: "toggle",                        })                    })                })            })
       </script>
     </section>
-    <section class="value relative z-50 max-w-screen-2xl mx-auto">
+    <section class="value relative max-w-screen-2xl mx-auto">
       <main id="hello" class="py-24 advantages bg-dark-5 font-body">
         <div class="max-w-screen-2xl px-4 lg:px-24 mx-auto">
           <div
@@ -276,6 +284,9 @@
           </div>
         </div>
       </footer>
+      <div data-aos="fade-up" class="go-to-top">
+        <a href="#header"><i class="fa fa-arrow-circle-up"></i></a>
+      </div>
     </section>
   </body>
 

@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap"); /* @font-face {                font-family: AirbnbCereal;                src: url(font-family/AirbnbCereal-Book.ttf);            } */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Red+Hat+Display:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Red+Hat+Display:wght@400;500;600;700&display=swap");
-
+html {
+  scroll-behavior: smooth;
+  transition: 1s all ease;
+}
 .font-be-vietnam {
   /* font-family: AirbnbCereal; */
   font-family: "Be Vietnam Pro", sans-serif;
@@ -329,4 +332,14 @@
 }
 .margin-auto {
   margin: 0 auto;
+}
+.go-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+.go-to-top i {
+  cursor: pointer;
+  font-size: 40px;
+  z-index: 9999;
 }
