@@ -176,11 +176,11 @@
     <section id="footer" class="footer text-white font-display bg-dark-6">
       <footer>
         <div
-          data-aos="fade-left"
+          data-aos="fade-right"
           class="max-w-screen-2xl px-4 mx-auto py-14 lg:px-24"
         >
           <div class="grid lg:grid-cols-12">
-            <div class="md:col-span-12 lg:col-span-12">
+            <div class="md:col-span-12 lg:col-span-8">
               <div class="text-2xl font-bold">Get In Touch</div>
               <p class="text-white font-bold mt-4">
                 Describe to me what you need! <br />
@@ -303,12 +303,24 @@
                   <img src="assets/images/codegrepper.png" width="30" />
                 </a>
               </div>
-              <p class="mt-5 text-base font-normal text-light-3">
-                Copyright © 2022 Asep Indra Kurniawan.
-              </p>
+            </div>
+            <div data-aos="fade-left" class="mt-6 md:mt-0 col-12 lg:col-4">
+              <div
+                class="badge-base LI-profile-badge"
+                data-locale="in_ID"
+                data-size="medium"
+                data-theme="dark"
+                data-type="VERTICAL"
+                data-vanity="asep-indra-kurniawan-adens"
+                data-version="v1"
+              ></div>
             </div>
           </div>
         </div>
+
+        <p class="p-10 text-base text-center font-normal text-light-3">
+          Copyright © 2022 Asep Indra Kurniawan.
+        </p>
       </footer>
       <div data-aos="fade-up" class="go-to-top">
         <a href="#header" alt="Go To Top" title="Go To Top"
@@ -317,7 +329,12 @@
       </div>
     </section>
   </body>
-
+  <script
+    src="https://platform.linkedin.com/badges/js/profile.js"
+    async
+    defer
+    type="text/javascript"
+  ></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     document.querySelector("html").classList.remove("no-js");
